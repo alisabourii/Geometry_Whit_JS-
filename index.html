@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{
+            width:500%; height:1000%;
+            float: left;
+        }
+        .datas{
+            float: left;
+            margin-left: 2%;
+        }
+    </style>
+</head>
+<body>
+    <form action="" class="nav">
+        <input type="radio" id="square" name="rd"> Square
+        <input type="radio" id="triangle" name="rd"> Triangle
+        <input type="radio" id="cirecle" name="rd"> Circle
+    </form>
+    <div class="nav">
+        <canvas id="canvas" width="500%" height="500%"></canvas><br>
+        <label id="perimeter">Perimeter: 0</label><br>
+        <label id="area">Area: 0</label>
+    </div>
+    <div class="datas">
+        <input type="text" id="hgsz" placeholder="Height/Radius(CM)">
+        <input type="text" id="wisz" placeholder="Width(CM)"><br><br>
+        <button onclick="draw()">Calucature</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
